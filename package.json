@@ -1,7 +1,7 @@
 {
   "name": "cyberglass",
   "version": "0.0.1",
-  "description": "A Quasar Project",
+  "description": "A Typescript Game Engine",
   "productName": "Zaxxon",
   "author": "Darren Govoni <darren@visualagents.ai>",
   "type": "module",
