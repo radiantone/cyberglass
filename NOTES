@@ -1,0 +1,17 @@
+- API layer on top of Excalibur 2D canvas and Three.js 3D canvas
+- Graph based game editor
+- AI based input for scene/image/narrative generation
+- Bundle and run on any device
+- Test/Debug and Run instantly on phone or browser
+- CSS theme styling
+- Framework for designing custom game rulesets
+- Execute custom ruleset
+
+Phase 1
+
+- Design core UI, cyber themed
+- Design initial game location block
+    - Includes image header, description and various actions, movement cells
+    - URL for image should connect to ComfyUI flow that generates an image
+    - Block can save image internally
+    - Can type description of what you want and block calls AI endpoint to generate imeage
