@@ -60,7 +60,22 @@ export default defineConfig((ctx) => {
       // polyfillModulePreload: true,
       // distDir
 
-      // extendViteConf (viteConf) {},
+      extendViteConf(viteConf) {
+        if(!viteConf.build) viteConf.build = {};
+        viteConf.build.chunkSizeWarningLimit = 600600,
+          //viteConf.build.server.cors = {
+          //  origin: ["http://localhost", "https://elasticcode.atlassian.net/wiki/rest/api/content"],
+          //  preflightContinue: false
+          //},
+          viteConf.build.rollupOptions = {
+            output: {
+              entryFileNames: '[name].js',
+              assetFileNames: '[name].css',
+              chunkFileNames: '[name].js',
+              manualChunks: undefined,
+            }
+          }
+      },
       // viteVuePluginOptions: {},
 
       vitePlugins: [

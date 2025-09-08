@@ -19,7 +19,6 @@ build: lint
 
 .PHONY: build-pwa
 build-pwa: lint audit
-	. ./env.dev
 	NODE_OPTIONS=--max_old_space_size=24096;quasar build -m pwa
 
 .PHONY: clean
