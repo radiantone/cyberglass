@@ -1,6 +1,8 @@
 .DS_Store
 .thumbs.db
 node_modules
+dist
+cybercrime
 
 # Quasar core related directories
 .quasar

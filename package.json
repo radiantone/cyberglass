@@ -6,6 +6,9 @@
   "author": "Darren Govoni <darren@visualagents.ai>",
   "type": "module",
   "private": true,
+  "overrides": {
+    "knip": "^5.46.0"
+  },
   "scripts": {
     "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{ts,js,cjs,mjs,vue}\"",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
@@ -17,9 +20,12 @@
   "dependencies": {
     "@quasar/extras": "^1.16.4",
     "axios": "^1.2.1",
+    "cannon": "^0.6.2",
     "excalibur": "^0.30.3",
     "pinia": "^3.0.1",
     "quasar": "^2.16.0",
+    "three": "^0.180.0",
+    "three.js": "^0.77.1",
     "vue": "^3.4.18",
     "vue-i18n": "^11.0.0",
     "vue-router": "^4.0.12"
@@ -37,6 +43,7 @@
     "globals": "^15.12.0",
     "prettier": "^3.3.3",
     "typescript": "~5.5.3",
+    "vite": "^6.3.5",
     "vite-plugin-checker": "^0.9.0",
     "vue-tsc": "^2.0.29"
   },
